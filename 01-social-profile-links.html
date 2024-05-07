@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Profile Link</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img{
+            width: 150px;
+        }
+        .profile{
+            background-color: #222;
+            color: #fff;
+            padding: 64px 86px;
+            border-radius: 20px;
+            font-family: monospace;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .profile:hover{
+            box-shadow: rgba(34, 34, 242, 0.4) -5px 5px, rgba(34, 34, 242, 0.3) -10px 10px, rgba(34, 34, 242, 0.2) -15px 15px, rgba(34, 34, 242, 0.1) -20px 20px, rgba(34, 34, 242, 0.05) -25px 25px;
+        }
+        .btn-set a{
+            display: block;
+            line-height: 1.8;
+            padding: 14px 48px;
+            background-color: #3f3f3f;
+            margin: 14px 10px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .btn-set a:hover{
+                background-color: rgb(34, 34, 242);
+                font-weight: bold;
+            }
+        h2{
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(127, 255, 0);
+        }
+        q{
+            font-size: 14px;
+        }
+        @media screen and (max-width: 480px){
+            .profile{
+                padding: 18px;
+                width: 280px;
+            }
+            .btn-set a{
+                padding: 16px;
+                font-size: 12px;
+                transition: all 0.3 ease;
+            }
+            .btn-set a:hover{
+                background-color: rgb(34, 34, 242);
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./pic-00.png" alt="">
+            <h2>Shiva Kumar</h2>
+            <p>Vijayawada, A.P</p>
+            <q>Full-Stack Web Developer</q>
+            <div class="btn-set">
+                <a href="#">GitHub</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Personal Blog</a>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
